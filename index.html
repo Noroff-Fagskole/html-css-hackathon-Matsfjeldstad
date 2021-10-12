@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Article Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href="https://www.noroff.no//images/logo/favicon.png" rel="shortcut icon" type="image/vnd.microsoft.icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,10 +20,19 @@
             <img src="./img/logo.png" alt="CSS Tricks">
             </a>
          <nav class="app-navigation">
-            <a href="/">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./signup.html">Signup</a>
+            <label for="hamburger-menu">
+                <span class="sr-only">
+                    Hamburger menu
+                </span>
+                <i class="fas fa-bars"></i>
+            </label>
+            <input type="checkbox" id="hamburger-menu"/>
+            <ul class="app-navigation-drawer">
+               <li><a href="/">Home</a></li> 
+               <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+               <li> <a href="./signup.html">Signup</a></li>
+            </ul>
          </nav>
         </div>
     </header>

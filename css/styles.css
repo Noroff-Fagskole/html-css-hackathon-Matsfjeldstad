@@ -10,9 +10,13 @@ body {
   font-weight: normal;
   line-height: 1.4;
 }
-.app-header {
-  border-bottom: 1px solid #999;
-  padding-bottom: 1em;
+
+main img {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto 0 auto;
+  display: block;
+}
 }
 .inner {
   max-width: 1080px;
@@ -24,29 +28,71 @@ body {
 .app-logo {
   display: inline-block;
 }
-
 .app-navigation {
   float: right;
 }
-
-.app-navigation a:link {
+.app-navigation-drawer li a:link {
   text-decoration: none;
-  color: #444;
+  color: #fff;
   padding: 0em 0.5em;
 }
 
-.app-navigation a:visited {
-  color: #444;
+.app-navigation-drawer li a:visited {
+  color: #fff;
 }
 
-.app-navigation a:active {
+.app-navigation-drawer li a:active {
   color: green;
 }
 
-.app-navigation a:hover {
+.app-navigation-drawer li a:hover {
   text-decoration: underline;
   color: #999;
 }
+
+.app-navigation-drawer{
+  display: block;
+  list-style: none;
+  background: #444;
+  padding: 0.5em;
+  border-bottom: 2px solid green;
+  /* animate: default state on page load*/
+  transition: all 0.3s linear;
+  transform: translateY(-160px);
+}
+.sr-only{
+  display: none;
+
+}
+label{
+  cursor: pointer;
+}
+#hamburger-menu { 
+  display: none;
+}
+#hamburger-menu:checked ~ .app-navigation-drawer {
+  display: block;
+  /* animate into page show state*/
+  transform: translateY(0px);
+}
+
+@media screen and (min-width: 767px) {
+.app-article {
+    display: inline-block;
+    width: 60%;
+  
+    border: 1px solid red;
+ }
+.app-sidebar {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    border: 1px solid red;
+  }
+
+}
+ 
+
 
 h1 {
   font-size: 2.5em;
