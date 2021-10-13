@@ -56,13 +56,11 @@ main img {
   background: #444;
   padding: 0.5em;
   border-bottom: 2px solid green;
-  /* animate: default state on page load*/
   transition: all 0.3s linear;
   transform: translateY(-160px);
 }
 .sr-only{
   display: none;
-
 }
 label{
   cursor: pointer;
@@ -92,7 +90,6 @@ label{
 
 }
  
-
 
 h1 {
   font-size: 2.5em;
